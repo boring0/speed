@@ -255,7 +255,7 @@
             </svg>
         </button>
         <h1 class="mdc-typography--headline4">数据流量浪费</h1>
-        <p class="mdc-typography--body2">用最快的速度浪费所有数据的最直接方式，仅支持移动设备使用中国大陆网络，并提供最高1Gbps浪费速率。(暂时维护中,预计2022年4月1日恢复。)</p>
+        <p class="mdc-typography--body2">用最快的速度浪费所有数据的最直接方式，仅支持移动设备使用中国大陆网络，并提供最高700Mbps浪费速率。</p>
         <br>
         <div class="option__unlimited mdc-switch mdc-switch--checked" data-mdc-auto-init="MDCSwitch">
             <div class="mdc-switch__track"></div>
@@ -271,7 +271,7 @@
             <div class="mdc-notched-outline">
                 <div class="mdc-notched-outline__leading"></div>
                 <div class="mdc-notched-outline__notch">
-                    <label for="goal" class="mdc-floating-label">浪费次数(总数据量=1.43MB*次数*下载线程)</label>
+                    <label for="goal" class="mdc-floating-label">浪费次数(总数据量=1.28MB*次数*下载线程)</label>
                 </div>
                 <div class="mdc-notched-outline__trailing"></div>
             </div>
@@ -410,7 +410,7 @@
         var threads = 8;
         var time = 0;
         var goal = 0;
-        var chunk = 1500000;
+        var chunk = 445869;
         var stopped = false;
         var formatSize = function(size) {
             var o = filesize(size, {
@@ -450,7 +450,7 @@
                 }
             }
             if (running == true)
-                xhr[id] = $.get("http://speed.api.ym68.cc:8092/speed/temp_file?" + Math.random(), function() {
+                xhr[id] = $.get("https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg?" + Math.random(), function() {
                     return download(id);
                 });
         };
